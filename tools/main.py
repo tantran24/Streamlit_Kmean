@@ -15,7 +15,7 @@ from visualize_data import visualize
 def plot(df, data, label, centroids, options):
     u_labels = np.unique(label)
     
-
+    st.set_option('deprecation.showPyplotGlobalUse', False)
     if len(options) == 2: 
         plt.xlabel(options[0])
         plt.ylabel(options[1])
